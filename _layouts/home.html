@@ -4,24 +4,89 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-<h3 class="archive__subtitle">
- About me
-</h3 class="archive__subtitle">
-<div>
-  안녕하세요! 저는 현재 국립과학수사연구원에서 Research Assistant로
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3> -->
+<h3 class="archive__subtitle">About Me</h3>
+<div style="font-size: 16px">
+  안녕하세요! 저는 현재
+  <a href="https://www.nfs.go.kr/site/nfs/05/10503020000002017083103.jsp"
+    >국립과학수사연구원 디지털과 문서연구실</a
+  >에서 Research Assistant로 일하고 있습니다. 현재 인영 이미지, 전자 서명 등의
+  데이터들을 <b>computer vision</b>과 <b>machine learning</b> 기술을 이용하여
+  감정하고 분류하는 프로그램을 개발하고 연구를 진행하며 논문을 작성하고
+  있습니다. 현재
+  <b>genuine-forgery 이미지 데이터를 판별하기 위한 데이터 전처리 과정</b>에
+  관심이 있어서 <b>segmentation, feature extraction</b> 등에 초점을 두고
+  있습니다.
+  <br />
+  <br />
+  또한 저는 제 연구가 법공학에도 기여되어 범죄 수사와 사법 체계에 도움이 되고,
+  정의를 구현하는 것에 기여가 되길 희망합니다. 공익을 위한 연구를 통해 더 나은
+  사회에 이바지하는 것이 저의 최종 목표입니다.
+  <br />
+  <br />
+  더 많은 정보를 보시려면 제
+  <a href="../assets/files/Resume_Korean_ver.pdf">CV</a>를 읽어주세요!
+  <br />
+  Contact: <a href="dlguswn3659@gmail.com">dlguswn7768@gmail.com</a>
+</div>
+<br />
+<h3 class="archive__subtitle">🔥 Article</h3>
+<div style="font-size: 16px">
+  <ul>
+    <li>
+      July 2022: Multi Wallet Dashboard, "MEPE"로 HackATOM 2022에서 HackATOM
+      Seoul Critics’ Awards - Interchain Award를 수상하고
+      <a href="https://www.hankyung.com/it/article/202208091296i"
+        >블록체인 컨퍼런스 Buidl Asia 2022</a
+      >에서 발표
+    </li>
+    <li>
+      September 2021: 한국프롭테크포럼X서울대학교 환경대학원에서 주최한 프롭테크
+      인 캡퍼스 SNU 2021에서
+      <a href="https://www.sedaily.com/NewsView/22QEHN4DYP"
+        >상업용 부동산 챗봇 및 전대차 플랫폼 스페이스톡</a
+      >으로 3위 수상
+    </li>
+    <li>
+      September 2020: 중앙대학교 다빈치 SW/AI TECH FAIR 2020 PE 연구활동
+      발표대회에서
+      <a
+        href="https://swedu.cau.ac.kr/board/view?menuid=001006002&pagesize=10&boardtypeid=5&boardid=338"
+        >병변 이미지 처리 학습을 주제로 최우수상(1위) 수상</a
+      >
+    </li>
+    <li>
+      November 2019: 2019 서울장학재단 공익인재장학 대회에서
+      <a href="https://mediahub.seoul.go.kr/archives/1256650?tr_code=m_snews"
+        >고독사 프로젝트</a
+      >로 우수상(함꼐공감상) 수상
+    </li>
+    <li>
+      September 2019: 2019 SKT NUGU Play 공모전에서
+      <a
+        href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=nuguai&logNo=221639899519"
+        >음성 마피아 게임 사회자 서비스, 마피아 MC</a
+      >로 장려상 수상
+    </li>
+  </ul>
+</div>
+<br />
+<br />
+<h3 class="archive__subtitle">📖 Education</h3>
+<div style="font-size: 16px">
+  <div>B.S. in Software Engineering</div>
+  <div>ChungAng University</div>
+  <div style="font-size: 14px; font-style: italic; margin-top: 3px">
+    GPA 4.09/4.50
+  </div>
+  <div style="font-size: 14px; margin-top: 3px">Mar 2018 - Feb 2023</div>
 </div>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% if paginator %} {% assign posts = paginator.posts %} {% else %} {% assign
+posts = site.posts %} {% endif %} {% assign entries_layout = page.entries_layout
+| default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+  {% for post in posts %} {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div>
 
