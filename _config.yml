@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme: "minimal-mistakes-jekyll"
-remote_theme: "mmistakes/minimal-mistakes"
+# theme: "minimal-mistakes-jekyll"
+# remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -106,12 +106,15 @@ author:
   name: "Hyunju Lee"
   avatar: "/assets/images/profile.jpg"
   bio: B.S. **@ CAU** <br/> **NFS** Research Assistant
-  location: "Somewhere"
-  email: "dlguswn7768@gmail.com"
+  location: "Wonju, South Korea"
+  # email: "dlguswn7768@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:dlguswn7768@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://adevju.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://adevju.com"

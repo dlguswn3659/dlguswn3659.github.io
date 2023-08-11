@@ -93,7 +93,7 @@ author:
   name: "Your Name"
   avatar: "/assets/images/bio-photo.jpg"
   bio: "I am an **amazing** person."
-  location: "Somewhere"
+  location: "Wonju, South Korea"
   links:
     - label: "Your Website"
       icon: "fas fa-fw fa-link"
