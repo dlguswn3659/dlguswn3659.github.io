@@ -1,0 +1,9 @@
+@inproceedings{oh2025efficient,
+  title={Efficient few-shot neural architecture search by counting the number of nonlinear functions},
+  author={Oh, Youngmin and Lee, Hyunju and Ham, Bumsub},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={18},
+  pages={19740--19748},
+  year={2025}
+}
